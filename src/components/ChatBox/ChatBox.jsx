@@ -51,7 +51,6 @@ const ChatBox = ({ chat, currentUser, setSendMessage, receivedMessage }) => {
 
 	// Send Message
 	const handleSend = async (e) => {
-		if (typeof e !== 'string' ) e.preventDefault()
 		const message = {
 			senderId: currentUser,
 			text: newMessage,
